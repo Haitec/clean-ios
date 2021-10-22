@@ -1,17 +1,19 @@
 //
 //  ContentView.swift
-//  iOS
+//  
 //
 //  Created by Miguel Dönicke on 22.10.21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
+public struct ContentView: View {
+    public var body: some View {
         Text("Hello, world!")
             .padding()
     }
+
+    public init() {}
 }
 
 struct ContentView_Previews: PreviewProvider {

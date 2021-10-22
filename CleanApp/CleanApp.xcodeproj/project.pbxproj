@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4931823827235951005EE252 /* PresentationLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4931823727235951005EE252 /* PresentationLayer */; };
 		493CDDD62723258300499858 /* CleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDD52723258300499858 /* CleanApp.swift */; };
-		493CDDD82723258300499858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDD72723258300499858 /* ContentView.swift */; };
-		493CDDDA2723258400499858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493CDDD92723258400499858 /* Assets.xcassets */; };
-		493CDDDD2723258400499858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493CDDDC2723258400499858 /* Preview Assets.xcassets */; };
 		493CDDE72723258400499858 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDE62723258400499858 /* iOSTests.swift */; };
 		493CDDF12723258400499858 /* iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDF02723258400499858 /* iOSUITests.swift */; };
 		493CDDF32723258400499858 /* iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDF22723258400499858 /* iOSUITestsLaunchTests.swift */; };
@@ -34,11 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49204DE3272346EF00891C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4931822F27234CAD005EE252 /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PresentationLayer; path = Modules/PresentationLayer; sourceTree = "<group>"; };
 		493CDDD22723258300499858 /* CleanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493CDDD52723258300499858 /* CleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanApp.swift; sourceTree = "<group>"; };
-		493CDDD72723258300499858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		493CDDD92723258400499858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		493CDDDC2723258400499858 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		493CDDE22723258400499858 /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		493CDDE62723258400499858 /* iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTests.swift; sourceTree = "<group>"; };
 		493CDDEC2723258400499858 /* iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4931823827235951005EE252 /* PresentationLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +69,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4926B7CE272338AE00DEC77E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4931822F27234CAD005EE252 /* PresentationLayer */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4931822A27234BE5005EE252 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		493CDDC92723258300499858 = {
 			isa = PBXGroup;
 			children = (
+				4926B7CE272338AE00DEC77E /* Packages */,
 				493CDDD42723258300499858 /* iOS */,
 				493CDDE52723258400499858 /* iOSTests */,
 				493CDDEF2723258400499858 /* iOSUITests */,
 				493CDDD32723258300499858 /* Products */,
+				4931822A27234BE5005EE252 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,19 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				493CDDD52723258300499858 /* CleanApp.swift */,
-				493CDDD72723258300499858 /* ContentView.swift */,
-				493CDDD92723258400499858 /* Assets.xcassets */,
-				493CDDDB2723258400499858 /* Preview Content */,
+				49204DE3272346EF00891C5E /* Assets.xcassets */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		493CDDDB2723258400499858 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				493CDDDC2723258400499858 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		493CDDE52723258400499858 /* iOSTests */ = {
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				4931823727235951005EE252 /* PresentationLayer */,
+			);
 			productName = CleanApp;
 			productReference = 493CDDD22723258300499858 /* CleanApp.app */;
 			productType = "com.apple.product-type.application";
@@ -231,8 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				493CDDDD2723258400499858 /* Preview Assets.xcassets in Resources */,
-				493CDDDA2723258400499858 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				493CDDD82723258300499858 /* ContentView.swift in Sources */,
 				493CDDD62723258300499858 /* CleanApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +423,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -447,7 +451,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -601,6 +604,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4931823727235951005EE252 /* PresentationLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PresentationLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 493CDDCA2723258300499858 /* Project object */;
 }

@@ -5,11 +5,12 @@
 //  Created by Miguel Dönicke on 22.10.21.
 //
 
+import DomainLayer
 import SwiftUI
 
 public struct ContentView: View {
     public var body: some View {
-        Text("Hello, world!")
+        Text(Domain().text)
             .padding()
     }
 

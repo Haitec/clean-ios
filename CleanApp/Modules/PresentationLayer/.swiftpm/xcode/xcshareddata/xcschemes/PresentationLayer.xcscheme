@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DomainLayer"
-               BuildableName = "DomainLayer"
-               BlueprintName = "DomainLayer"
+               BlueprintIdentifier = "PresentationLayer"
+               BuildableName = "PresentationLayer"
+               BlueprintName = "PresentationLayer"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,16 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DomainLayerTests"
-               BuildableName = "DomainLayerTests"
-               BlueprintName = "DomainLayerTests"
+               BlueprintIdentifier = "PresentationLayerTests"
+               BuildableName = "PresentationLayerTests"
+               BlueprintName = "PresentationLayerTests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -61,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DomainLayer"
-            BuildableName = "DomainLayer"
-            BlueprintName = "DomainLayer"
+            BlueprintIdentifier = "PresentationLayer"
+            BuildableName = "PresentationLayer"
+            BlueprintName = "PresentationLayer"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

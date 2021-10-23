@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4929008D27241EEC00D6688E /* DomainLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4929008C27241EEC00D6688E /* DomainLayer */; };
 		4931823827235951005EE252 /* PresentationLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4931823727235951005EE252 /* PresentationLayer */; };
 		493CDDD62723258300499858 /* CleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDD52723258300499858 /* CleanApp.swift */; };
 		493CDDE72723258400499858 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDE62723258400499858 /* iOSTests.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		49204DE3272346EF00891C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4929008B27241EE500D6688E /* DomainLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DomainLayer; path = Modules/DomainLayer; sourceTree = "<group>"; };
 		4931822F27234CAD005EE252 /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PresentationLayer; path = Modules/PresentationLayer; sourceTree = "<group>"; };
 		493CDDD22723258300499858 /* CleanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493CDDD52723258300499858 /* CleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanApp.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4929008D27241EEC00D6688E /* DomainLayer in Frameworks */,
 				4931823827235951005EE252 /* PresentationLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4931822F27234CAD005EE252 /* PresentationLayer */,
+				4929008B27241EE500D6688E /* DomainLayer */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -150,6 +154,7 @@
 			name = iOS;
 			packageProductDependencies = (
 				4931823727235951005EE252 /* PresentationLayer */,
+				4929008C27241EEC00D6688E /* DomainLayer */,
 			);
 			productName = CleanApp;
 			productReference = 493CDDD22723258300499858 /* CleanApp.app */;
@@ -606,6 +611,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4929008C27241EEC00D6688E /* DomainLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DomainLayer;
+		};
 		4931823727235951005EE252 /* PresentationLayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PresentationLayer;

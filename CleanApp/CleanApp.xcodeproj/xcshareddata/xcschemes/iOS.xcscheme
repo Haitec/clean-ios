@@ -49,6 +49,36 @@
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DataLayerTests"
+               BuildableName = "DataLayerTests"
+               BlueprintName = "DataLayerTests"
+               ReferencedContainer = "container:Modules/DataLayer">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DomainLayerTests"
+               BuildableName = "DomainLayerTests"
+               BlueprintName = "DomainLayerTests"
+               ReferencedContainer = "container:Modules/DomainLayer">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PresentationLayerTests"
+               BuildableName = "PresentationLayerTests"
+               BlueprintName = "PresentationLayerTests"
+               ReferencedContainer = "container:Modules/PresentationLayer">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

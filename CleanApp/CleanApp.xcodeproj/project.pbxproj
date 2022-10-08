@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49290090272427DE00D6688E /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4929008F272427DE00D6688E /* DataLayer */; };
-		49290092272427EC00D6688E /* DomainLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 49290091272427EC00D6688E /* DomainLayer */; };
-		4931823827235951005EE252 /* PresentationLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4931823727235951005EE252 /* PresentationLayer */; };
+		4902E3C128F1DB24003AB55D /* DataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4902E3C028F1DB24003AB55D /* DataLayer */; };
+		4902E3C328F1DB24003AB55D /* DomainLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4902E3C228F1DB24003AB55D /* DomainLayer */; };
+		4902E3C528F1DB24003AB55D /* PresentationLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 4902E3C428F1DB24003AB55D /* PresentationLayer */; };
 		493CDDD62723258300499858 /* CleanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDD52723258300499858 /* CleanApp.swift */; };
 		493CDDE72723258400499858 /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDE62723258400499858 /* iOSTests.swift */; };
 		493CDDF12723258400499858 /* iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDDF02723258400499858 /* iOSUITests.swift */; };
@@ -34,10 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4902E3BE28F1DB07003AB55D /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DataLayer; path = Modules/DataLayer; sourceTree = "<group>"; };
+		4902E3BF28F1DB0D003AB55D /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PresentationLayer; path = Modules/PresentationLayer; sourceTree = "<group>"; };
 		49204DE3272346EF00891C5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4929008B27241EE500D6688E /* DomainLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DomainLayer; path = Modules/DomainLayer; sourceTree = "<group>"; };
-		4929008E2724263800D6688E /* DataLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataLayer; path = Modules/DataLayer; sourceTree = "<group>"; };
-		4931822F27234CAD005EE252 /* PresentationLayer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PresentationLayer; path = Modules/PresentationLayer; sourceTree = "<group>"; };
 		493CDDD22723258300499858 /* CleanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493CDDD52723258300499858 /* CleanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanApp.swift; sourceTree = "<group>"; };
 		493CDDE22723258400499858 /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +44,7 @@
 		493CDDEC2723258400499858 /* iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		493CDDF02723258400499858 /* iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITests.swift; sourceTree = "<group>"; };
 		493CDDF22723258400499858 /* iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49F53D6228F1D86500469838 /* DomainLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DomainLayer; path = Modules/DomainLayer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4931823827235951005EE252 /* PresentationLayer in Frameworks */,
-				49290090272427DE00D6688E /* DataLayer in Frameworks */,
-				49290092272427EC00D6688E /* DomainLayer in Frameworks */,
+				4902E3C328F1DB24003AB55D /* DomainLayer in Frameworks */,
+				4902E3C528F1DB24003AB55D /* PresentationLayer in Frameworks */,
+				4902E3C128F1DB24003AB55D /* DataLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +78,9 @@
 		4926B7CE272338AE00DEC77E /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				4929008E2724263800D6688E /* DataLayer */,
-				4931822F27234CAD005EE252 /* PresentationLayer */,
-				4929008B27241EE500D6688E /* DomainLayer */,
+				49F53D6228F1D86500469838 /* DomainLayer */,
+				4902E3BE28F1DB07003AB55D /* DataLayer */,
+				4902E3BF28F1DB0D003AB55D /* PresentationLayer */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				4931823727235951005EE252 /* PresentationLayer */,
-				4929008F272427DE00D6688E /* DataLayer */,
-				49290091272427EC00D6688E /* DomainLayer */,
+				4902E3C028F1DB24003AB55D /* DataLayer */,
+				4902E3C228F1DB24003AB55D /* DomainLayer */,
+				4902E3C428F1DB24003AB55D /* PresentationLayer */,
 			);
 			productName = CleanApp;
 			productReference = 493CDDD22723258300499858 /* CleanApp.app */;
@@ -616,15 +616,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4929008F272427DE00D6688E /* DataLayer */ = {
+		4902E3C028F1DB24003AB55D /* DataLayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataLayer;
 		};
-		49290091272427EC00D6688E /* DomainLayer */ = {
+		4902E3C228F1DB24003AB55D /* DomainLayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DomainLayer;
 		};
-		4931823727235951005EE252 /* PresentationLayer */ = {
+		4902E3C428F1DB24003AB55D /* PresentationLayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PresentationLayer;
 		};

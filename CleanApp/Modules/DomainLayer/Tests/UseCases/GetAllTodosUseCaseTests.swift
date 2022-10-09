@@ -1,5 +1,5 @@
 //
-//  GetAllTodosUseCaseTests.swift
+//  DefaultGetAllTodosUseCaseTests.swift
 //  DomainLayerTests
 //
 //  Created by Miguel Dönicke on 08.10.22.
@@ -8,12 +8,12 @@
 import DomainLayer
 import XCTest
 
-final class GetAllTodosUseCaseTests: XCTestCase {
+final class DefaultGetAllTodosUseCaseTests: XCTestCase {
     func testExecute() async throws {
         // Arrange
         let expected = [Todo.mock()]
         let repository = MockTodoRepository(todosResult: .success(expected))
-        let sut = GetAllTodosUseCase(repository: repository)
+        let sut = DefaultGetAllTodosUseCase(repository: repository)
 
         // Act
         let result = try await sut.execute().get()

@@ -11,6 +11,7 @@ import DomainLayer
 struct MockTodoRepository: TodoRepository {
     var todosResult: Result<[Todo], Error>!
     var completeResult: Result<Todo, Error>!
+    var addResult: Result<Todo, Error>!
 
     func todos() async -> Result<[Todo], Error> {
         todosResult
@@ -18,5 +19,9 @@ struct MockTodoRepository: TodoRepository {
 
     func complete(id: Int) async -> Result<Todo, Error> {
         completeResult
+    }
+
+    func add(todo: Todo) async -> Result<Todo, Error> {
+        addResult
     }
 }

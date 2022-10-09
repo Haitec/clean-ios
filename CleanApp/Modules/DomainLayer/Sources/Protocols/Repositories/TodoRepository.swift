@@ -10,4 +10,5 @@ import Foundation
 public protocol TodoRepository {
     func todos() async -> Result<[Todo], Error>
     func complete(id: Int) async -> Result<Todo, Error>
+    func add(todo: Todo) async -> Result<Todo, Error>
 }

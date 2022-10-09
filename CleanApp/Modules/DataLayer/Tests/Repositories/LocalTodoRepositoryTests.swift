@@ -14,7 +14,7 @@ final class LocalTodoRepositoryTests: XCTestCase {
         // Arrange
         let expected = Todo(id: 1, title: "Mock")
         let sut = LocalTodoRepository()
-        sut.add(todo: expected)
+        await sut.add(todo: expected)
 
         // Act
         let result = try await sut.todos().get()
@@ -27,7 +27,7 @@ final class LocalTodoRepositoryTests: XCTestCase {
         // Arrange
         let expected = Todo(id: 1, title: "Mock", completed: true)
         let sut = LocalTodoRepository()
-        sut.add(todo: expected)
+        await sut.add(todo: expected)
 
         // Act
         let result = try await sut.complete(id: 1).get()
@@ -48,5 +48,18 @@ final class LocalTodoRepositoryTests: XCTestCase {
         } catch {
             XCTFail()
         }
+    }
+
+    func testAdd() async throws {
+        // Arrange
+        let expected = Todo(id: 1, title: "Mock")
+        let sut = LocalTodoRepository()
+        await sut.add(todo: Todo(title: "Mock"))
+
+        // Act
+        let result = try await sut.todos().get()
+
+        // Assert
+        XCTAssertEqual(result, [expected])
     }
 }

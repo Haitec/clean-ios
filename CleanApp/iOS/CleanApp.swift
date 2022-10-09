@@ -10,9 +10,11 @@ import SwiftUI
 
 @main
 struct CleanApp: App {
+    let diContainer = DIContainer()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoListView(viewModel: diContainer.makeTodoListViewModel())
         }
     }
 }

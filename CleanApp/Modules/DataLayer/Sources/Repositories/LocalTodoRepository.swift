@@ -19,14 +19,11 @@ public class LocalTodoRepository: TodoRepository {
         self.todos = []
     }
 
-    public func add(todo: Todo) {
-        todos.append(todo)
-    }
-
     public func todos() async -> Result<[Todo], Swift.Error> {
         .success(todos)
     }
 
+    @discardableResult
     public func complete(id: Int) async -> Result<Todo, Swift.Error> {
         if var todo = todos.first(where: { $0.id == id }) {
             todo.completed = true
@@ -34,5 +31,13 @@ public class LocalTodoRepository: TodoRepository {
         } else {
             return .failure(Error.notFound)
         }
+    }
+
+    @discardableResult
+    public func add(todo: Todo) async -> Result<Todo, Swift.Error> {
+        var newTodo = todo
+        newTodo.id = todos.count + 1
+        todos.append(newTodo)
+        return .success(newTodo)
     }
 }

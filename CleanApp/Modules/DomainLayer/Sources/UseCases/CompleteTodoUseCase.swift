@@ -7,7 +7,11 @@
 
 import Foundation
 
-public class CompleteTodoUseCase {
+public protocol CompleteTodoUseCase {
+    func execute(id: Int) async -> Result<Todo, Error>
+}
+
+public class DefaultCompleteTodoUseCase: CompleteTodoUseCase {
     private let repository: TodoRepository
 
     public init(repository: TodoRepository) {

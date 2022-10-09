@@ -7,7 +7,11 @@
 
 import Foundation
 
-public class GetAllTodosUseCase {
+public protocol GetAllTodosUseCase {
+    func execute() async -> Result<[Todo], Error>
+}
+
+public class DefaultGetAllTodosUseCase: GetAllTodosUseCase {
     private let repository: TodoRepository
 
     public init(repository: TodoRepository) {

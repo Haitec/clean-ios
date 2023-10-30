@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol GetAllTodosUseCase {
-    func execute() async -> Result<[Todo], Error>
+    func callAsFunction() async -> Result<[Todo], Error>
 }
 
 public class DefaultGetAllTodosUseCase: GetAllTodosUseCase {
@@ -18,7 +18,7 @@ public class DefaultGetAllTodosUseCase: GetAllTodosUseCase {
         self.repository = repository
     }
 
-    public func execute() async -> Result<[Todo], Error> {
+    public func callAsFunction() async -> Result<[Todo], Error> {
         await repository.todos()
     }
 }

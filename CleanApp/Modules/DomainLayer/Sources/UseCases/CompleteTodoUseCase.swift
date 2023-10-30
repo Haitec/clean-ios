@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol CompleteTodoUseCase {
-    func execute(id: Int) async -> Result<Todo, Error>
+    func callAsFunction(id: Int) async -> Result<Todo, Error>
 }
 
 public class DefaultCompleteTodoUseCase: CompleteTodoUseCase {
@@ -18,7 +18,7 @@ public class DefaultCompleteTodoUseCase: CompleteTodoUseCase {
         self.repository = repository
     }
 
-    public func execute(id: Int) async -> Result<Todo, Error> {
+    public func callAsFunction(id: Int) async -> Result<Todo, Error> {
         await repository.complete(id: id)
     }
 }

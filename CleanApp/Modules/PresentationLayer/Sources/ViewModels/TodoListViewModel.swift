@@ -30,7 +30,7 @@ public class TodoListViewModel: ObservableObject {
     @MainActor
     @Sendable
     public func loadTodos() async {
-        _ = await getAllTodosUseCase.execute()
+        _ = await getAllTodosUseCase()
             .map {
                 self.todos = $0
             }
@@ -45,7 +45,7 @@ public class TodoListViewModel: ObservableObject {
         addNewTodoIsDisabled = true
 
         let todo = Todo(title: newTodoText)
-        let result = await addTodoUseCase.execute(todo: todo)
+        let result = await addTodoUseCase(todo: todo)
         if case .success(let newTodo) = result {
             todos.append(newTodo)
             newTodoText = ""
@@ -56,7 +56,7 @@ public class TodoListViewModel: ObservableObject {
 
     @MainActor
     public func completeTodo(id: Int) async {
-        let result = await completeTodoUseCase.execute(id: id)
+        let result = await completeTodoUseCase(id: id)
         if case .success(let completedTodo) = result,
            let index = todos.firstIndex(where: { $0.id == completedTodo.id }) {
             todos.remove(at: index)

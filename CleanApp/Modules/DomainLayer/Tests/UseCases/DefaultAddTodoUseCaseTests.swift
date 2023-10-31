@@ -16,7 +16,7 @@ final class DefaultAddTodoUseCaseTests: XCTestCase {
         let sut = DefaultAddTodoUseCase(repository: repository)
 
         // Act
-        let result = try await sut.execute(todo: expected).get()
+        let result = try await sut(todo: expected).get()
 
         // Assert
         XCTAssertEqual(result, expected)

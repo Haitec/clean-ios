@@ -16,7 +16,7 @@ final class MockAddTodoUseCase: AddTodoUseCase {
         self.result = result
     }
 
-    func execute(todo: Todo) async -> Result<Todo, Error> {
+    func callAsFunction(todo: Todo) async -> Result<Todo, Error> {
         executeCalled = true
         return result
     }

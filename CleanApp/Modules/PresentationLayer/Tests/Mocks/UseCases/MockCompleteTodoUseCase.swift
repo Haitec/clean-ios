@@ -16,7 +16,7 @@ final class MockCompleteTodoUseCase: CompleteTodoUseCase {
         self.result = result
     }
 
-    func execute(id: Int) async -> Result<Todo, Error> {
+    func callAsFunction(id: Int) async -> Result<Todo, Error> {
         executeCalledId = id
         return result
     }

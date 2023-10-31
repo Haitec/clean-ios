@@ -9,7 +9,7 @@ import DomainLayer
 import Foundation
 
 final class PreviewAddTodoUseCase: AddTodoUseCase {
-    func execute(todo: Todo) async -> Result<Todo, Error> {
+    func callAsFunction(todo: Todo) async -> Result<Todo, Error> {
         fatalError()
     }
 }
